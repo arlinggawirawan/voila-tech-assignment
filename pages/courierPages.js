@@ -21,6 +21,7 @@ class CourierPage {
             const clickConfirmCourier = await this.driver.wait(until.elementLocated(this.confirmCourier));
             await this.driver.wait(until.elementIsVisible(clickChooseCourier));
             await clickConfirmCourier.click();
+            console.log('Courier selected');
 
         } catch (error) {
         console.error('Error choose courier:', error);

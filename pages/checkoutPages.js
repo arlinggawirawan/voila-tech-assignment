@@ -10,6 +10,7 @@ class CheckoutPage {
         try {
             const checkoutButton = await this.driver.wait(until.elementLocated(this.checkoutButton));
             await checkoutButton.click();
+            console.log('Redicrecting to checkout page');
         } catch(error) {
             console.error('Error checkout:', error);
         }

@@ -38,6 +38,7 @@ class PaymentPage {
             const clickConfirmPaymentMethod = await this.driver.wait(until.elementLocated(this.confirmPaymentMethod));
             await this.driver.wait(until.elementIsEnabled(clickConfirmPaymentMethod));
             await clickConfirmPaymentMethod.click();
+            console.log('Payment selected');
 
         } catch (error) {
             console.error('Error select payment method:', error);

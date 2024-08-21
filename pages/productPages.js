@@ -82,6 +82,7 @@ class ProductPage {
             await this.driver.wait(until.elementLocated(this.addToBag));
             const addToBag = await this.driver.findElement(this.addToBag);
             await addToBag.click();
+            console.log('Product added to bag');
         } catch (error) {
             console.error('Error add to bag:', error);
         }
@@ -91,6 +92,7 @@ class ProductPage {
         try {
             const cart = await this.driver.findElement(this.goToShoppingBag);
             await cart.click();
+            console.log('Redirecting to cart page');
         } catch (error) {
             console.error('Error go to cart:', error);
         }

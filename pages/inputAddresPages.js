@@ -73,6 +73,7 @@ class InputAddressPage {
             await inputNoteCourier.sendKeys(address.note);
 
             await clickSaveAddress.click();
+            console.log('Saving address information');
 
             const clickSaveNewAddress = await this.driver.wait(until.elementLocated(this.selectNewAddress));
             await this.driver.wait(until.elementIsVisible(clickSaveNewAddress));
@@ -81,6 +82,7 @@ class InputAddressPage {
             const clickConfirmAddress = await this.driver.wait(until.elementLocated(this.confirmAddress));
             await this.driver.wait(until.elementIsVisible(clickConfirmAddress));
             await clickConfirmAddress.click();
+            console.log('Address selected');
 
         } catch (error) {
             console.error('Error Input:', error);
