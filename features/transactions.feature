@@ -6,5 +6,5 @@ Feature: Make 1 transaction from login to checkout
     And I proceed to checkout
     And I input my shipping address as "Arlingga-Candidate QA"
     And I choose the courier
-    And I choose "midtrans" as the payment method
+    And I choose bank transfer as the payment method
     Then I should see the correct transaction amount

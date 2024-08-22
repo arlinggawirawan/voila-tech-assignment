@@ -52,7 +52,7 @@ When('I choose the courier', async function () {
     await this.driver.sleep(2000);
 });
 
-When('I choose "midtrans" as the payment method', async function () {
+When('I choose bank transfer as the payment method', async function () {
     paymentPages = new PaymentPage(this.driver);
     await paymentPages.scrollToPaymet();
     await paymentPages.selectPaymentMethod();
