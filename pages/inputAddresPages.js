@@ -6,12 +6,12 @@ class InputAddressPage {
         this.driver = driver;
         this.selectAddress = By.xpath('//p[@id="base" and contains(@class, "_15kd2we68") and contains(@class, "_17zx15tdc") and contains(@class, "_1ccbe2wc")]');
         this.addAddress = By.xpath('//button[@data-test-id="CT_Component_AddAddress"]');
-        this.addressLabel = By.xpath('//input[@data-test-id="CT_Component_AddressLabel" and @name="category"]');
+        this.addressLabel = By.xpath('//input[@data-test-id="CT_Component_AddressLabel"]');
         this.editAddress = By.xpath('//p[@id="base" and contains(@class, "edit-text")]');
-        this.recepientName = By.xpath('//input[@data-test-id="CT_component_input-controller_default" and @name="name"]');
-        this.fillPhoneNumnber = By.xpath('//input[@data-test-id="CT_Component_AddressPhone" and @name="phone"]');
-        this.pinPointAddress = By.xpath('//button[@data-test-id="CT_Component_AddPinpoint" and @type="button"]');
-        this.selectLocation = By.xpath('//button[@data-test-id="CT_Component_SelectLocation" and @type="button"]');
+        this.recepientName = By.xpath('//input[@data-test-id="CT_component_input-controller_default"]');
+        this.fillPhoneNumnber = By.xpath('//input[@data-test-id="CT_Component_AddressPhone"]');
+        this.pinPointAddress = By.xpath('//button[@data-test-id="CT_Component_AddPinpoint"]');
+        this.selectLocation = By.xpath('//button[@data-test-id="CT_Component_SelectLocation"]');
         this.fullAddress = By.xpath('//textarea[@data-test-id="CT_component_textarea-controller_default"]');
         this.noteCourier = By.xpath('//input[@data-test-id="CT_component_input-controller_default" and @name="note"]');
         this.saveAddress = By.xpath('//button[@data-test-id="CT_Component_SubmitAddress" and @type="submit"]');

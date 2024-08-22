@@ -4,9 +4,9 @@ class PaymentPage {
     constructor(driver) {
         this.driver = driver;
         this.payment = By.xpath('//div[@data-test-id="CT_Component_SelectorPayment_ButtonPayment"]');
-        this.clickPaymet = By.xpath('//p[contains(@class, "_15r4f4dmn") and contains(@class, "_17zx15tdc") and contains(@class, "_1ccbe2wb") and text()="Select Payment"]');
-        this.componentPayment = By.xpath('//p[@id="base" and contains(@class, "_15kd2weog") and contains(@class, "_17zx15te8") and contains(@class, "_1ccbe2wb") and text()="Bank Transfer"]');
-        this.selectPayment = By.xpath('//p[@id="base" and contains(@class, "_15kd2weog") and contains(@class, "_15r4f4dn7") and contains(@class, "_17zx15tdc") and contains(@class, "_1ccbe2wb") and text()="BCA Bank Transfer"]');
+        this.clickPaymet = By.xpath('//p[contains(@class, "_15r4f4dmn") and text()="Select Payment"]');
+        this.componentPayment = By.xpath('//p[@id="base" and text()="Bank Transfer"]');
+        this.selectPayment = By.xpath('//p[@id="base"and text()="BCA Bank Transfer"]');
         this.confirmPaymentMethod = By.xpath('//button[@data-test-id="CT_Component_PaymentListFooter_ButtonConfirm"]');
     }
 
